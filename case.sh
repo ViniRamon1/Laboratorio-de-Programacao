@@ -28,6 +28,14 @@ do
   echo "Script que solicita a informação de um nome de usuário e verifique se o nome informado é um usuário válido no sistema (desconsiderando as diferenças entre maiúsculas e minúsculas)."
   ./questoes/exc2.sh
   ;;
+  3)
+  echo
+  echo "Script que recebe como parâmetro o caminho de um diretório e lista seus arquivos e diretórios um a um. Se for diretório, é escrito '(dir)' ao lado do diretório."
+  echo -n "Digite o caminho de um diretório 👉 "
+  read arg
+  echo 
+  ./questoes/exc3.sh $arg
+  ;;
   *)
   echo "opção inválida!"
   esac
