@@ -21,9 +21,16 @@ do
   read arg2
   echo 
   ./questoes/exc1.sh $arg1 $arg2
-  echo "------------------------"
+  ;;
+
+  2)
+  echo
+  echo "Script que solicita a informação de um nome de usuário e verifique se o nome informado é um usuário válido no sistema (desconsiderando as diferenças entre maiúsculas e minúsculas)."
+  ./questoes/exc2.sh
   ;;
   *)
   echo "opção inválida!"
   esac
+
+  echo "------------------------"
 done
