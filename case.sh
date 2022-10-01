@@ -36,6 +36,45 @@ do
   echo 
   ./questoes/exc3.sh $arg
   ;;
+
+  5)
+  echo
+  echo "Script que receba um nome de arquivo como parâmetro e verifique se esse arquivo existe. Em caso afirmativo, imprimir o seu tamanho em bytes."
+  echo -n "Digite o nome do arquivo:"
+  read arg3
+  echo
+  ./questoes/exc5.sh $arg3
+  ;;
+  
+  6)
+  echo
+  echo "Script que apresente ao usuário um menu com as seguintes opções:"
+  echo
+  ./questoes/exc6.sh
+  ;;
+
+  7)
+  echo
+  echo "Script que, a partir da informação dos dias da semana em que há aulas
+  de TETI, produza todas as respectivas datas do ano em que serão ministradas
+  nossas aulas."
+  echo "Digite a data 1"
+  read data1
+  echo "Digite a data 2"
+  read data2
+  echo "Digite o dia"
+  read dia
+  ./questoes/exc7.sh $data1 $data2 $dia
+  ;;
+
+  8)
+  echo
+  echo "Considere um determinado diretório que possui vários arquivos textos. Esses arquivos possuem nomes variados, não obedecendo a qualquer critério. Escreva um script que renomeie cada arquivo desse diretório, dando ao arquivo o nome correspondete à primeira palavra encontrada no conteúdo do próprio arquivo."
+  echo "Digite um diretorio"
+  read diretorio
+  ./questoes/exc8.sh $diretorio
+  ;;
+
   *)
   echo "opção inválida!"
   esac
