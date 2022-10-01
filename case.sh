@@ -2,9 +2,24 @@
 
 while [ true ]
 do
+  echo "Questoes: "
+  echo "1) Apresenta o maior e a soma de dois numeros"
+  echo "2) Verifica se o usuario existe no sistema"
+  echo "3) Lista arquivos e diretorios de um diretorio especifico"
+  echo "4) Lista todos os numeros pares até um limite dado"
+  echo "5) Verifica se um arquivo existe e informa o tamanho dele"
+  echo "6) Menu com opcao de particoes, usuarios logados e data e hora"
+  echo "7) Informa o calendarios de aula"
+  echo "8) Renomeia arquivos dado o primeiro nome do arquivo"
+  echo "9) Ordena palavras a partir de uma lista"
+  echo "10) Ordena palavras em loop"
+  echo "11) Calculadora"
+  echo "12) Usuarios cadastrados no sistema e seus diretorios home"
+
   echo -n "Escolha a questão 👉 "
   
   read questao
+  clear
 
   case $questao in
   0)
@@ -73,6 +88,33 @@ do
   echo "Digite um diretorio"
   read diretorio
   ./questoes/exc8.sh $diretorio
+  ;;
+  
+  9)
+  echo "Esse script recebe como parametro palavras aleatorias e como resultado devolve essas palavras em ordem alfabetica"
+  echo "digite as palavras:"
+  read palavras
+  ./questoes/questao9.sh $palavras
+  ;;
+
+  10)
+  echo
+  echo "Esse script recebe palavras e as ordena em um loop"
+  ./questoes/questao10.sh
+  ;;
+
+  11) 
+  echo
+  echo "Esse script realiza operacoes aritmedicas basicas (adicao, subtracao, multiplicacao e divisao) recebendo a operacao e os numeros como exemplo (use +, -, x, / respectivamente)"
+  echo "digite a operacao:"
+  read operacao
+  ./questoes/questao11.sh $operacao
+  ;;
+
+  12)
+  echo
+  echo "Esse script apresenta os usuarios cadastrados no sistema e seus respectivos diretorios home"
+  ./questoes/questao12.sh
   ;;
 
   *)
