@@ -15,7 +15,9 @@ do
   echo "10) Ordena palavras em loop"
   echo "11) Calculadora"
   echo "12) Usuarios cadastrados no sistema e seus diretorios home"
-
+  echo "13) Informa qual shell mais utilizado"
+  echo "Digite x para sair"
+  
   echo -n "Escolha a questão 👉 "
   
   read questao
@@ -116,6 +118,15 @@ do
   echo "Esse script apresenta os usuarios cadastrados no sistema e seus respectivos diretorios home"
   ./questoes/questao12.sh
   ;;
+
+  13)
+
+  echo
+  echo "Script que mostra qual o shell mais utilizado e informa quantos usuarios utilizam"
+  ./questoes/questao13.sh
+  ;;
+
+  x) exit;;
 
   *)
   echo "opção inválida!"
